@@ -32,6 +32,18 @@ header{
     align-items: center;
     padding: 0 30px;
     height: 111px;
+    .titre{
+        h1{
+            font-size: 40px;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        img{
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+        }
+    }
     nav{
         display: flex;
         align-items: center;
@@ -55,18 +67,6 @@ header{
         display: flex;
         align-items: center;
         color: var(--Darkblue);
-    }
-    .titre{
-        h1{
-            font-size: 40px;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-        img{
-            width: 75px;
-            height: 75px;
-            cursor: pointer;
-        }
     }
     img{
         width: 50px;
@@ -117,11 +117,11 @@ main{
         }
         .location_1{
             bottom: 15%;
-            left: 52.5%;
+            left: 50.5%;
         }
         .location_2{
             top: 50%;
-            left: 60%;
+            left: 58%;
         }
         .overlay{
             background-color: var(--White);
@@ -152,11 +152,11 @@ main{
         }
         .overlay_1{
             bottom: 21%;
-            right: 37%;
+            right: 39%;
         }
         .overlay_2{
-            top: 27%;
-            right: 29.5%;
+            top: 27.5%;
+            right: 31.5%;
         }
     }
     .pattern{
@@ -209,6 +209,40 @@ main{
         .img_espacements{
             width: 100%;
             margin: 18px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1312px) {
+    header{
+        .titre{
+            h1{
+                font-size: 25px;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        nav{
+            div{
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        .add{
+            width: 300px;
+            height: 40px;
+            font-size: 15px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
