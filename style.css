@@ -8,12 +8,14 @@
     --Background: #AAB6EE;
     --Blue: #2C57E5;
     --Darkblue: #2C1EA7;
+    --Blue_gradient: linear-gradient(to right,  #2C57E5, #2C1EA7);
     --Black: #000000;
     --Blackdiscord: #1A1A1E;
     --White: #FFFFFF;
     --Overblue: #2CAAE5;
-    --Green: #1EA79C;
     --Yellow: #FFD33D;
+    --Orange: #FF983D;
+    --Yellow-gradient: linear-gradient(to right, #FFD33D, #FF983D);
 }
 
 body{
@@ -27,15 +29,24 @@ header{
     align-items: center;
     padding: 0 30px;
     height: 111px;
-    a{
-        text-decoration: none;
-        color: var(--Darkblue);
-        font-size: 25px;
-        margin-left: 24px;
-    }
     nav{
         display: flex;
         align-items: center;
+        div{
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: var(--Darkblue);
+                font-size: 25px;
+                margin-left: 24px;
+            }
+        }
+        div:hover{
+            cursor: pointer;
+            a{
+                color: var(--Yellow);
+            }
+        }
     }
     div{
         display: flex;
@@ -44,12 +55,14 @@ header{
     }
     .titre{
         h1{
-            font-size: 30px;
-            margin-left: 10px;
+            font-size: 40px;
+            margin-left: 15px;
+            font-weight: bold;
         }
         img{
             width: 75px;
             height: 75px;
+            cursor: pointer;
         }
     }
     img{
@@ -57,7 +70,7 @@ header{
         height: 50px;
     }
     .add{
-        background: linear-gradient(to right,  #2C57E5, #2C1EA7);
+        background: var(--Blue_gradient);
         width: 405px;
         height: 55px;
         border-radius: 15px;
@@ -66,11 +79,21 @@ header{
         justify-content: center;
         align-items: center;
         margin-right: 44px;
+        cursor: pointer;
         img{
             width: 30px;
             height: 30px;
             margin-right: 5px;
         }
+    }
+    .add:hover{
+        background: var(--Yellow-gradient);
+    }
+    .icone_discord{
+        margin-right: 17px;
+    }
+    .icone_discord, .icone_instagram{
+        cursor: pointer;
     }
 }
 
@@ -80,5 +103,109 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 57px 95px;
+        .carte_bretagne{
+            width: 100%;
+            position: relative;
+        }
+        .location_img{
+            position: absolute;
+            cursor: pointer;
+        }
+        .location_1{
+            bottom: 15%;
+            left: 52.5%;
+        }
+        .location_2{
+            top: 50%;
+            left: 60%;
+        }
+        .overlay{
+            background-color: var(--White);
+            border: 3px solid var(--Darkblue);
+            box-shadow: 0 0 10px var(--Darkblue);
+            border-radius: 20px;
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 350px;
+            h3{
+                font-size: 20px;
+                margin-top: 8px;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            h4{
+                font-size: 19px;
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+        .overlay_1{
+            bottom: 21%;
+            right: 37%;
+        }
+        .overlay_2{
+            top: 27%;
+            right: 29.5%;
+        }
+    }
+    .pattern{
+        background-image: url(img/Pattern.png);
+        padding: 30px 120px;
+        color: var(--White);
+        h2{
+            font-size: 40px;
+            text-decoration: underline;
+            margin-bottom: 46px;
+        }
+    }
+    .evenements_liste{
+        padding: 62px 48px 62px 24px;
+        margin-left: 20px;
+        background-color: var(--Blackdiscord);
+        border-radius: 15px;
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        .div4{
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+            p{
+                margin: 18px 0 18px 24px;
+            }
+        }
+        h3{
+            font-size: 35px;
+            margin-bottom: 32px;
+            font-weight: normal;
+            span{
+                font-weight: bold
+            }
+        }
+        img{
+            margin-left: 24px;
+        }
+        .affiche{
+            width: 60%;
+        }
+        p{
+            font-size: 30px;
+            margin-left: 48px;
+            width: 50%;
+        }
+        .img_espacements{
+            width: 100%;
+            margin: 18px 0;
+        }
     }
 }
