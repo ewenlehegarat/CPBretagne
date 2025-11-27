@@ -32,17 +32,10 @@ header{
     align-items: center;
     padding: 0 30px;
     height: 111px;
-    .titre{
-        h1{
-            font-size: 40px;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-        img{
-            width: 75px;
-            height: 75px;
-            cursor: pointer;
-        }
+    .logo{
+        width: 28%;
+        height: 28%;
+        cursor: pointer;
     }
     nav{
         display: flex;
@@ -97,6 +90,9 @@ header{
     }
     .icone_discord, .icone_instagram{
         cursor: pointer;
+    }
+    .menu_burger{
+        display: none;
     }
 }
 
@@ -217,7 +213,7 @@ main{
     header{
         .titre{
             h1{
-                font-size: 25px;
+                font-size: 35px;
             }
             img{
                 width: 50px;
@@ -227,21 +223,42 @@ main{
         nav{
             div{
                 a{
-                    font-size: 15px;
+                    font-size: 20px;
                 }
             }
         }
         img{
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
         }
         .add{
             width: 300px;
-            height: 40px;
+            height: 45px;
             font-size: 15px;
             img{
                 width: 20px;
                 height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1155px){
+    header{
+        nav{
+            display: none;
+        }
+        .add{
+            display: none;
+        }
+        .menu_burger{
+            margin-left: 17px;
+            display: block;
+            input{
+                width: 30px;
+                height: 30px;
+                opacity: 0;
+                cursor: pointer;
             }
         }
     }
