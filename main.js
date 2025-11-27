@@ -67,7 +67,7 @@ location2.addEventListener('mouseover', function(){
     })
     location2.addEventListener('click', function(){
         window.scrollTo({
-            top: 1672, behavior: 'smooth'
+            top: 1700, behavior: 'smooth'
         })
     })
 })
