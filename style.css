@@ -174,4 +174,27 @@ aside:has(input:checked) .button_aside img{
             width: 70%;
         }
     }
+
+    main{
+        .carte{
+            padding: 15px;
+        }
+    }
+    aside{
+        top: 800px;
+        left: 0;
+        width: 100%;
+        height: 744px;
+        .button_aside{
+            width: 80px;
+            height: 20px;
+            top: -20px;
+            right: 166px;
+            border-radius: 10px 10px 0 0;
+            img{
+                width: 20px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
 }
