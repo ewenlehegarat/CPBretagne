@@ -241,8 +241,8 @@ aside:has(input:checked) .button_aside img{
             width: 35%;
         }
         img{
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
         }
     }
     .carte{
@@ -320,7 +320,24 @@ aside:has(input:checked) .button_aside img{
     header{
         padding: 0 10px;
         .logo{
-            width: 70%;
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        .logo{
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 411px) {
+    header{
+        img{
+            width: 25px;
+            height: 25px;
         }
     }
 }
