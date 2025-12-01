@@ -256,41 +256,44 @@ aside:has(input:checked) .button_aside img{
         }
         .carte_de_la_semaine{
             h2{
-                font-size: 8px;
+                font-size: 20px;
+                margin-bottom: 0;
             }
             .semaine_df{
+                flex-direction: column;
                 img{
-                    width: 20px;
+                    width: 30px;
                 }
+                margin-bottom: 9px;
             }
             p{
-                font-size: 6px;
+                font-size: 15px;
             }
             a{
-                padding: 5px 0;
-                font-size: 10px;
-                width: 150px;
+                padding: 10px 0;
+                font-size: 15px;
+                width: 200px;
                 border-radius: 7px;
             }
         }
         .separateur_main{
-            width: 200px;
+            width: 300px;
         }
         .autres_evenements{
             h2{
-                font-size: 20px;
+                font-size: 25px;
             }
             h3{
-                font-size: 18px;
+                font-size: 20px;
             }
         }
         .vide_grenier{
             a{
-                padding: 5px 12px;
-                width: 150px;
-                font-size: 14px;
+                padding: 10px 15px;
+                width: 180px;
+                font-size: 19px;
                 border-radius: 9px;
-                border-width: 2.5px;
+                border-width: 3.5px;
             }
         }
     }
