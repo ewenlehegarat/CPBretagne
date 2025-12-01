@@ -158,7 +158,7 @@ main{
 aside{
     background-color: var(--Blackdiscord);
     width: 380px;
-    padding: 25px 18px;
+    padding: 25px;
     position: absolute;
     left: -380px;
     display: flex;
@@ -184,7 +184,7 @@ aside{
         color: var(--White);
         background: var(--Blue_gradient);
         padding: 10px 0;
-        width: 314px;
+        width: 100%;
         text-align: center;
         border-radius: 7px;
         font-size: 19px;
@@ -193,7 +193,7 @@ aside{
         background: var(--Yellow-gradient);
     }
     img{
-        width: 314px;
+        width: 100%;
         margin-top: 18px;
     }
     .button_aside{
@@ -211,7 +211,7 @@ aside{
         img{
             transform-origin: center;
             margin-top: 0;
-            width: 30px;
+            width: 100%;
         }
     }
     transition: left 0.3s ease;
@@ -245,6 +245,75 @@ aside:has(input:checked) .button_aside img{
             height: 35px;
         }
     }
+    .carte{
+        padding: 15px;
+    }
+    main{
+        width: 100%;
+        padding: 0 50px;
+        img{
+            width: 100%;
+        }
+        .carte_de_la_semaine{
+            h2{
+                font-size: 8px;
+            }
+            .semaine_df{
+                img{
+                    width: 20px;
+                }
+            }
+            p{
+                font-size: 6px;
+            }
+            a{
+                padding: 5px 0;
+                font-size: 10px;
+                width: 150px;
+                border-radius: 7px;
+            }
+        }
+        .separateur_main{
+            width: 200px;
+        }
+        .autres_evenements{
+            h2{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
+        .vide_grenier{
+            a{
+                padding: 5px 12px;
+                width: 150px;
+                font-size: 14px;
+                border-radius: 9px;
+                border-width: 2.5px;
+            }
+        }
+    }
+    
+    aside{
+        width: 180px;
+        h2{
+            font-size: 13px;
+        }
+        h3{
+            font-size: 8px;
+        }
+        .button_aside{
+            width: 20px;
+            height: 80px;
+            right: -20px;
+            top: 100px;
+        }
+        a{
+            width: 100%;
+            font-size: 10px
+        }
+    }
 }
 
 @media screen and (max-width: 1155px){
@@ -252,12 +321,6 @@ aside:has(input:checked) .button_aside img{
         padding: 0 10px;
         .logo{
             width: 70%;
-        }
-    }
-
-    main{
-        .carte{
-            padding: 15px;
         }
     }
 }
