@@ -31,7 +31,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    height: 111px;
     .logo{
         width: 25%;
         height: auto;
@@ -77,14 +76,13 @@ main{
 aside{
     background-color: var(--Blackdiscord);
     width: 380px;
-    height: 978.167px;
+    padding: 25px 18px;
     position: absolute;
     left: -380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--White);
-    padding: 0 18px;
     h2{
         font-size: 30px;
         font-weight: 700;
