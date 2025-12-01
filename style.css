@@ -235,8 +235,9 @@ aside:has(input:checked) .button_aside img{
     transform: rotate(180deg);
 }
 
-@media screen and (max-width: 1312px) {
+@media screen and (max-width: 1312px){
     header{
+        padding: 10px;
         .logo{
             width: 35%;
         }
@@ -244,19 +245,22 @@ aside:has(input:checked) .button_aside img{
             width: 40px;
             height: 40px;
         }
+        .icone_discord{
+            margin-right: 8px;
+        }
     }
     .carte{
         padding: 15px;
     }
     main{
         width: 100%;
-        padding: 0 50px;
+        padding: 18px;
         img{
             width: 100%;
         }
         .carte_de_la_semaine{
             h2{
-                font-size: 20px;
+                font-size: 15px;
                 margin-bottom: 0;
             }
             .semaine_df{
@@ -264,10 +268,10 @@ aside:has(input:checked) .button_aside img{
                 img{
                     width: 30px;
                 }
-                margin-bottom: 9px;
+                margin-bottom: 8px;
             }
             p{
-                font-size: 15px;
+                font-size: 12px;
             }
             a{
                 padding: 10px 0;
@@ -289,11 +293,11 @@ aside:has(input:checked) .button_aside img{
         }
         .vide_grenier{
             a{
-                padding: 10px 15px;
+                padding: 8px 15px;
                 width: 180px;
-                font-size: 19px;
+                font-size: 15px;
                 border-radius: 9px;
-                border-width: 3.5px;
+                border-width: 3px;
             }
         }
     }
@@ -314,14 +318,14 @@ aside:has(input:checked) .button_aside img{
         }
         a{
             width: 100%;
-            font-size: 10px
+            font-size: 10px;
         }
     }
 }
 
 @media screen and (max-width: 1155px){
     header{
-        padding: 0 10px;
+        padding: 10px;
         .logo{
             width: 60%;
         }
