@@ -168,6 +168,7 @@ aside{
     img{
         width: 100%;
         margin-top: 18px;
+        cursor: zoom-in;
     }
     .button_aside{
         width: 30px;
@@ -206,6 +207,17 @@ aside:has(input:checked){
 
 aside:has(input:checked) .button_aside img{
     transform: rotate(180deg);
+}
+
+.display_aside{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 450px;
+    z-index: 2;
+    img{
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 800px){

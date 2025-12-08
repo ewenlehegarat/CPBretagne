@@ -3,6 +3,10 @@ const imgInstagram = document.querySelector('.right a:nth-child(2) img')
 const locationImg = document.querySelectorAll('.location_img')
 const location1 = document.querySelector('.location_1')
 const location2 = document.querySelector('.location_2')
+const image1 = document.querySelector('.image_1')
+const displayAside = document.querySelector('.display_aside')
+
+let isClosed = true
 
 imgDiscord.addEventListener('mouseover', function(){
     imgDiscord.src = "img/Discord_hover.png"
@@ -26,3 +30,13 @@ locationImg.forEach(imglocation => {
         imglocation.src = "img/Location.png"
     })
 });
+
+image1.addEventListener('click', function(){
+    if(isClosed){
+        displayAside.style.display = 'block'
+    }else if(!isClosed){
+        displayAside.style.display = 'none'
+    }
+
+    isClosed = !isClosed
+})
