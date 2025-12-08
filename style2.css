@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+
+:root{
+    --Background: #AAB6EE;
+    --Blue: #2C57E5;
+    --Darkblue: #2C1EA7;
+    --Blue_gradient: linear-gradient(to right, #3C5AE8, #2C1CA4);
+    --Black: #000000;
+    --Blackdiscord: #1A1A1E;
+    --White: #FFFFFF;
+    --Overblue: #2CAAE5;
+    --Yellow: #FFD33D;
+    --Orange: #FF983D;
+    --Yellow-gradient: linear-gradient(to right, #FFD33D, #FF983D);
+}
+
+header{
+    background-color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    .left{
+        width: 100%;
+        nav{
+            margin-left: 30px;
+            height: 104px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: var(--Darkblue);
+                font-size: 20px;
+                font-weight: 600;
+                position: relative;
+                height: 104px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a:hover::after{
+                width: 100%;
+            }
+            a::after{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 4px;
+                background: var(--Blue_gradient);
+                transition: width 0.6s ease;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .logo{
+        cursor: pointer;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+    .icone_discord{
+        margin-right: 17px;
+        width: 80%;
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    .icone_instagram{
+        cursor: pointer;
+        margin-top: 4px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+main{
+    background-image: url(img/Pattern_image.png);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 27px;
+        margin-bottom: 18px;
+    }
+    img{
+        width: 650px;
+    }
+    .lien_google_maps{
+        text-decoration: none;
+        margin-top: 18px;
+        color: var(--Blue);
+        background: var(--White);
+        padding: 15px 0;
+        width: 300px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 7px;
+        font-size: 19px;
+        margin-bottom: 18px;
+    }
+    .lien_google_maps:hover{
+        background: var(--Yellow-gradient);
+        color: var(--White);
+    }
+    p{
+        font-size: 20px;
+        margin-top: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    header{
+        img{
+            width: 80%;
+            height: 80%;
+        }
+    }
+}

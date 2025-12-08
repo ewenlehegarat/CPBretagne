@@ -31,6 +31,41 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    .left{
+        width: 100%;
+        nav{
+            margin-left: 30px;
+            height: 104px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: var(--Darkblue);
+                font-size: 20px;
+                font-weight: 600;
+                position: relative;
+                height: 104px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a:hover::after{
+                width: 100%;
+            }
+            a::after{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 4px;
+                background-color: var(--Darkblue);
+                transition: width 0.75s ease;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
     .logo{
         width: 25%;
         height: auto;
@@ -151,7 +186,7 @@ aside{
             font-weight: 600;
         }
     }
-    a{
+    .lien_google_maps{
         text-decoration: none;
         margin-top: 18px;
         color: var(--White);
@@ -162,12 +197,15 @@ aside{
         border-radius: 7px;
         font-size: 19px;
     }
-    a:hover{
+    .lien_google_maps:hover{
         background: var(--Yellow-gradient);
     }
     img{
         width: 100%;
         margin-top: 18px;
+    }
+    .image_affiche{
+        cursor: pointer;
     }
     .button_aside{
         width: 30px;
@@ -206,6 +244,17 @@ aside:has(input:checked){
 
 aside:has(input:checked) .button_aside img{
     transform: rotate(180deg);
+}
+
+.display_aside{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 450px;
+    z-index: 2;
+    img{
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 800px){
