@@ -22,7 +22,7 @@
 }
 
 body{
-    background: linear-gradient(to right, #AAB6EE, #41529b);
+    background-image: url(img/Pattern_image.png);
 }
 
 header{
@@ -94,6 +94,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    background: linear-gradient(to right, #AAB6EE, #41529b);
     .carte_bretagne{
         width: 100%;
         position: relative;
@@ -109,7 +110,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(img/Pattern_image.png);
     padding: 36px 0;
     color: var(--White);
     .carte_de_la_semaine{
@@ -206,6 +206,7 @@ aside{
     }
     .image_affiche{
         cursor: pointer;
+        border-radius: 5px;
     }
     .button_aside{
         width: 30px;
