@@ -354,8 +354,16 @@ aside:has(input:checked) .button_aside img{
 @media screen and (max-width: 411px) {
     header{
         img{
-            width: 80%;
-            height: 80%;
+            width: 70%;
+            height: 70%;
+        }
+        .left{
+            nav{
+                margin-left: 5px;
+                a{
+                    font-size: 10px;
+                }
+            }
         }
     }
 }
