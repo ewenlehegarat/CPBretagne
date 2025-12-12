@@ -353,6 +353,7 @@ aside:has(input:checked) .button_aside img{
 
 @media screen and (max-width: 411px) {
     header{
+        padding: 0 15px;
         img{
             width: 70%;
             height: 70%;
