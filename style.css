@@ -366,4 +366,12 @@ aside:has(input:checked) .button_aside img{
             }
         }
     }
+    aside{
+        .lien_google_maps{
+            font-size: 10px;
+        }
+        .image_affiche{
+            border-radius: 1px;
+        }
+    }
 }
