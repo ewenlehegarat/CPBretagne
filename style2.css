@@ -99,6 +99,9 @@ main{
         font-weight: 400;
         margin-top: 27px;
         margin-bottom: 18px;
+        span{
+            font-weight: bold;
+        }
     }
     img{
         width: 650px;
