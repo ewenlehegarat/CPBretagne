@@ -394,7 +394,7 @@ header{
     transition: 600ms opacity cubic-bezier(0, 0, 0, 1), 600ms translate cubic-bezier(0, 0, 0, 1);
 }
 
-.image_affiche{
+.image_affiche, .image_de_la_semaine{
     opacity: 0;
     scale: .5;
     translate: 0 50px;
@@ -424,11 +424,11 @@ header{
     }
 }
 
-header.view, .image_affiche.view{
+header.view, .image_affiche.view, .image_de_la_semaine.view{
     opacity: 1;
     translate: 0;
 }
 
-.image_affiche.view{
+.image_affiche.view, .image_de_la_semaine.view{
     scale: 1;
 }
