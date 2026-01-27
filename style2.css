@@ -169,3 +169,48 @@ main{
         }
     }
 }
+
+header{
+    opacity: 0;
+    translate: 0 -60px;
+    transition: 600ms opacity cubic-bezier(0, 0, 0, 1), 600ms translate cubic-bezier(0, 0, 0, 1);
+}
+
+.image_affiche, .image_de_la_semaine{
+    opacity: 0;
+    scale: .5;
+    translate: 0 50px;
+    transition: 600ms opacity cubic-bezier(0, 0, 0, 1), 600ms translate cubic-bezier(0, 0, 0, 1), 600ms scale cubic-bezier(0, 0, 0, 1);
+}
+
+.lien_google_maps{
+    opacity: 0;
+    translate: -120px 0;
+    transition: 600ms opacity cubic-bezier(0, 0, 0, 1), 600ms translate cubic-bezier(0, 0, 0, 1);
+}
+
+.lien_google_maps.view{
+    opacity: 1;
+    animation: slideBounce 700ms cubic-bezier(.34,1.56,.64,1) forwards;
+}
+
+@keyframes slideBounce {
+    0% {
+        translate: -120px 0;
+    }
+    70% {
+        translate: 10px 0; /* dépasse légèrement à droite */
+    }
+    100% {
+        translate: 0 0;
+    }
+}
+
+header.view, .image_affiche.view, .image_de_la_semaine.view{
+    opacity: 1;
+    translate: 0;
+}
+
+.image_affiche.view, .image_de_la_semaine.view{
+    scale: 1;
+}
