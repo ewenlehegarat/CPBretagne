@@ -1,20 +1,37 @@
-const imgDiscord = document.querySelector('.right a:nth-child(1) img')
-const imgInstagram = document.querySelector('.right a:nth-child(2) img')
-const locationImg = document.querySelectorAll('.location_img')
-const location1 = document.querySelector('.location_1')
-const location2 = document.querySelector('.location_2')
-const displayAside = document.querySelector('.display_aside')
+const iconeDiscord = document.querySelector('.icone_discord')
+const iconeInstagram = document.querySelector('.icone_instagram')
 
-imgDiscord.addEventListener('mouseover', function(){
-    imgDiscord.src = "img/Discord_hover.png"
-    imgDiscord.addEventListener('mouseout', function(){
-        imgDiscord.src = "img/Discord.png"
-    })
+iconeDiscord.addEventListener('mouseenter', ()=>{
+    iconeDiscord.src = 'img/Discord_hover.png'
 })
 
-imgInstagram.addEventListener('mouseover', function(){
-    imgInstagram.src = "img/Instagram_hover.png"
-    imgInstagram.addEventListener('mouseout', function(){
-        imgInstagram.src = "img/Instagram.png"
-    })
+iconeDiscord.addEventListener('mouseleave', ()=>{
+    iconeDiscord.src = 'img/Discord.png'
 })
+
+
+iconeInstagram.addEventListener('mouseenter', ()=>{
+    iconeInstagram.src = 'img/Instagram_hover.png'
+})
+
+iconeInstagram.addEventListener('mouseleave', ()=>{
+    iconeInstagram.src = 'img/Instagram.png'
+})
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        
+        const delay = entry.target.dataset.delay || 0;
+        
+        setTimeout(() => {
+            entry.target.classList.add('view');
+        }, delay);
+        
+        observer.unobserve(entry.target);
+    });
+}, {
+    threshold: 0.2
+});
+
+document.querySelectorAll('header, .image_affiche, .lien_google_maps, .image_de_la_semaine').forEach(el => observer.observe(el));
