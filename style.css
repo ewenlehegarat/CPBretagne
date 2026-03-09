@@ -39,7 +39,9 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            
             a{
+                transition: color ease 300ms, background-color ease 300ms, border ease 300ms;
                 text-decoration: none;
                 color: var(--Darkblue);
                 font-size: clamp(10px 8vh 20px);
@@ -164,7 +166,6 @@ main{
         margin: 18px 0;
         width: 500px;
     }
-
 }
 
 aside{

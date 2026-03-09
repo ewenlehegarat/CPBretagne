@@ -21,6 +21,12 @@
     --Yellow-gradient: linear-gradient(to right, #FFD33D, #FF983D);
 }
 
+body{
+    a{
+        transition: color ease 300ms, background-color ease 300ms, border ease 300ms;
+    }
+}
+
 header{
     background-color: var(--White);
     display: flex;
